@@ -1,0 +1,27 @@
+{
+  "title": "两只老虎",
+  "instrument": "guitar",
+  "notes": [
+    { "pitch": 1, "chord": "C", "lyrics": "两" },
+    { "pitch": 2, "chord": "C", "lyrics": "只" },
+    { "pitch": 3, "chord": "G", "lyrics": "老" },
+    { "pitch": 1, "chord": "C", "lyrics": "虎" },
+    { "pitch": 1, "chord": "C", "lyrics": "两" },
+    { "pitch": 2, "chord": "C", "lyrics": "只" },
+    { "pitch": 3, "chord": "G", "lyrics": "老" },
+    { "pitch": 1, "chord": "C", "lyrics": "虎" },
+    { "pitch": 3, "chord": "G", "lyrics": "跑" },
+    { "pitch": 4, "chord": "G", "lyrics": "得" },
+    { "pitch": 5, "chord": "C", "lyrics": "快" },
+    { "pitch": 3, "chord": "G", "lyrics": "跑" },
+    { "pitch": 4, "chord": "G", "lyrics": "得" },
+    { "pitch": 5, "chord": "C", "lyrics": "快" },
+    { "pitch": 5, "chord": "F", "lyrics": "一" },
+    { "pitch": 6, "chord": "F", "lyrics": "只" },
+    { "pitch": 5, "chord": "C", "lyrics": "没" },
+    { "pitch": 4, "chord": "G", "lyrics": "有" },
+    { "pitch": 3, "chord": "C", "lyrics": "眼" },
+    { "pitch": 2, "chord": "C", "lyrics": "睛" },
+    { "pitch": 1, "chord": "C", "lyrics": "睛" }
+  ]
+}

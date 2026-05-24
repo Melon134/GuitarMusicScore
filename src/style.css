@@ -1,0 +1,100 @@
+:root {
+  --el-color-primary: #f59e0b;
+  --el-color-primary-light-3: #fbbf24;
+  --el-color-primary-light-5: #fcd34d;
+  --el-color-primary-light-7: #fde68a;
+  --el-color-primary-light-8: #fef3c7;
+  --el-color-primary-light-9: #fffbeb;
+  --el-color-primary-dark-2: #d97706;
+  --el-color-warning: #f59e0b;
+  --el-color-warning-light-3: #fbbf24;
+  --el-color-warning-light-5: #fcd34d;
+  --el-color-warning-light-7: #fde68a;
+  --el-color-warning-light-8: #fef3c7;
+  --el-color-warning-light-9: #fffbeb;
+  --el-color-warning-dark-2: #d97706;
+  --el-border-radius-base: 8px;
+  --el-border-radius-small: 6px;
+
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #44403c;
+  background: #faf8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #faf8f0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fffbeb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fcd34d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+.el-button--warning {
+  --el-button-bg-color: #f59e0b;
+  --el-button-border-color: #f59e0b;
+  --el-button-hover-bg-color: #d97706;
+  --el-button-hover-border-color: #d97706;
+  --el-button-active-bg-color: #b45309;
+  --el-button-active-border-color: #b45309;
+}
+
+.el-button--warning.is-plain {
+  --el-button-bg-color: #fffbeb;
+  --el-button-border-color: #fcd34d;
+  --el-button-text-color: #92400e;
+  --el-button-hover-bg-color: #fef3c7;
+  --el-button-hover-border-color: #f59e0b;
+  --el-button-hover-text-color: #78350f;
+}
+
+.el-radio-button__inner {
+  transition: all 0.25s;
+}
+
+.el-dialog {
+  --el-dialog-border-radius: 12px;
+}
+
+.el-select {
+  --el-select-border-color-hover: #f59e0b;
+  --el-select-input-focus-border-color: #f59e0b;
+}
+
+.el-input__wrapper {
+  box-shadow: 0 0 0 1px #e5e7eb inset;
+}
+
+.el-input__wrapper:hover {
+  box-shadow: 0 0 0 1px #fcd34d inset;
+}
+
+.el-input.is-focus .el-input__wrapper {
+  box-shadow: 0 0 0 1px #f59e0b inset;
+}

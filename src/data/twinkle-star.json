@@ -1,0 +1,20 @@
+{
+  "title": "小星星",
+  "instrument": "guitar",
+  "notes": [
+    { "pitch": 1, "chord": "C", "lyrics": "一" },
+    { "pitch": 1, "chord": "C", "lyrics": "闪" },
+    { "pitch": 5, "chord": "C", "lyrics": "一" },
+    { "pitch": 5, "chord": "C", "lyrics": "闪" },
+    { "pitch": 6, "chord": "F", "lyrics": "亮" },
+    { "pitch": 6, "chord": "F", "lyrics": "晶" },
+    { "pitch": 5, "chord": "C", "lyrics": "晶" },
+    { "pitch": 4, "chord": "G", "lyrics": "满" },
+    { "pitch": 4, "chord": "G", "lyrics": "天" },
+    { "pitch": 3, "chord": "C", "lyrics": "都" },
+    { "pitch": 3, "chord": "C", "lyrics": "是" },
+    { "pitch": 2, "chord": "G", "lyrics": "小" },
+    { "pitch": 2, "chord": "G", "lyrics": "星" },
+    { "pitch": 1, "chord": "C", "lyrics": "星" }
+  ]
+}

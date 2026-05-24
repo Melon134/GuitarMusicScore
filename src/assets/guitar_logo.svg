@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A853"/>
+      <stop offset="50%" style="stop-color:#F0D78C"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5D78C"/>
+      <stop offset="40%" style="stop-color:#D4A853"/>
+      <stop offset="100%" style="stop-color:#A0762A"/>
+    </linearGradient>
+    <linearGradient id="neckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4956A"/>
+      <stop offset="100%" style="stop-color:#7B4B2A"/>
+    </linearGradient>
+    <radialGradient id="holeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0D0D0D"/>
+      <stop offset="70%" style="stop-color:#1A1A1A"/>
+      <stop offset="100%" style="stop-color:#2D1A0A"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerShadow">
+      <feOffset dx="0" dy="1"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in2="SourceGraphic"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs>
+
+  <!-- 外圆背景 -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGrad)"/>
+  
+  <!-- 金色外环 -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#ringGrad)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- 吉他主体 -->
+  <g transform="translate(100, 100)">
+    <!-- 琴身 -->
+    <path d="M-30 5 Q-50 10 -52 30 Q-54 50 -42 65 Q-28 80 -8 82 Q12 80 26 65 Q38 50 36 30 Q34 10 14 5 Q4 2 -8 5 Z" fill="url(#bodyGrad)" stroke="#6B4226" stroke-width="1.2" filter="url(#glow)"/>
+    
+    <!-- 琴身内纹 -->
+    <path d="M-30 5 Q-50 10 -52 30 Q-54 50 -42 65 Q-28 80 -8 82 Q12 80 26 65 Q38 50 36 30 Q34 10 14 5 Q4 2 -8 5 Z" fill="none" stroke="#E8C97A" stroke-width="0.4" opacity="0.5"/>
+
+    <!-- 音孔装饰圈 -->
+    <circle cx="-8" cy="45" r="14" fill="none" stroke="#D4A853" stroke-width="2.5"/>
+    <circle cx="-8" cy="45" r="12" fill="none" stroke="#B8860B" stroke-width="0.8"/>
+    <!-- 音孔 -->
+    <circle cx="-8" cy="45" r="10" fill="url(#holeGrad)"/>
+
+    <!-- 琴码 -->
+    <rect x="-14" y="68" width="12" height="3.5" rx="1.5" fill="#2D1A0A"/>
+    <circle cx="-11" cy="70" r="0.8" fill="#D4A853"/>
+    <circle cx="-8" cy="70" r="0.8" fill="#D4A853"/>
+    <circle cx="-5" cy="70" r="0.8" fill="#D4A853"/>
+
+    <!-- 琴颈 -->
+    <path d="M-12 -55 L-12 5 L-4 5 L-4 -55" fill="url(#neckGrad)" stroke="#5D3A1A" stroke-width="0.8"/>
+
+    <!-- 品丝 -->
+    <line x1="-12" y1="-45" x2="-4" y2="-45" stroke="#D4A853" stroke-width="1"/>
+    <line x1="-12" y1="-35" x2="-4" y2="-35" stroke="#D4A853" stroke-width="1"/>
+    <line x1="-12" y1="-25" x2="-4" y2="-25" stroke="#D4A853" stroke-width="1"/>
+    <line x1="-12" y1="-15" x2="-4" y2="-15" stroke="#D4A853" stroke-width="1"/>
+    <line x1="-12" y1="-5" x2="-4" y2="-5" stroke="#D4A853" stroke-width="1"/>
+
+    <!-- 琴弦 -->
+    <line x1="-10" y1="-55" x2="-10" y2="70" stroke="#F5E6C8" stroke-width="0.5" opacity="0.8"/>
+    <line x1="-8" y1="-55" x2="-8" y2="70" stroke="#F5E6C8" stroke-width="0.5" opacity="0.8"/>
+    <line x1="-6" y1="-55" x2="-6" y2="70" stroke="#F5E6C8" stroke-width="0.5" opacity="0.8"/>
+
+    <!-- 琴头 -->
+    <path d="M-12 -55 L-14 -72 L-10 -76 L-8 -76 L-6 -76 L-2 -72 L-4 -55" fill="#3E1F0D" stroke="#2D1A0A" stroke-width="0.8"/>
+
+    <!-- 调音旋钮 左 -->
+    <ellipse cx="-18" cy="-70" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+    <ellipse cx="-18" cy="-64" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+    <ellipse cx="-18" cy="-58" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+
+    <!-- 调音旋钮 右 -->
+    <ellipse cx="2" cy="-70" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+    <ellipse cx="2" cy="-64" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+    <ellipse cx="2" cy="-58" rx="2.5" ry="1.8" fill="#D4A853" stroke="#8B6914" stroke-width="0.4"/>
+
+    <!-- 护板 -->
+    <path d="M14 5 Q22 10 24 22 Q25 32 22 38 Q18 34 17 26 Q16 18 15 12 Z" fill="#3E1F0D" opacity="0.5"/>
+  </g>
+
+  <!-- 底部文字装饰弧线 -->
+  <path d="M55 155 Q100 175 145 155" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M60 160 Q100 178 140 160" fill="none" stroke="url(#ringGrad)" stroke-width="0.6" opacity="0.3"/>
+</svg>

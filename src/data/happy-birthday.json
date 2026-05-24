@@ -1,0 +1,30 @@
+{
+  "title": "生日快乐",
+  "instrument": "guitar",
+  "notes": [
+    { "pitch": 5, "chord": "C", "lyrics": "祝" },
+    { "pitch": 5, "chord": "C", "lyrics": "你" },
+    { "pitch": 6, "chord": "F", "lyrics": "生" },
+    { "pitch": 5, "chord": "C", "lyrics": "日" },
+    { "pitch": 1, "chord": "G", "lyrics": "快" },
+    { "pitch": 7, "chord": "C", "lyrics": "乐" },
+    { "pitch": 5, "chord": "C", "lyrics": "祝" },
+    { "pitch": 5, "chord": "C", "lyrics": "你" },
+    { "pitch": 6, "chord": "F", "lyrics": "生" },
+    { "pitch": 5, "chord": "C", "lyrics": "日" },
+    { "pitch": 2, "chord": "G", "lyrics": "快" },
+    { "pitch": 1, "chord": "C", "lyrics": "乐" },
+    { "pitch": 5, "chord": "C", "lyrics": "祝" },
+    { "pitch": 5, "chord": "C", "lyrics": "你" },
+    { "pitch": 5, "chord": "G", "lyrics": "生" },
+    { "pitch": 3, "chord": "C", "lyrics": "日" },
+    { "pitch": 1, "chord": "F", "lyrics": "快" },
+    { "pitch": 7, "chord": "C", "lyrics": "乐" },
+    { "pitch": 4, "chord": "F", "lyrics": "祝" },
+    { "pitch": 4, "chord": "F", "lyrics": "你" },
+    { "pitch": 3, "chord": "C", "lyrics": "生" },
+    { "pitch": 2, "chord": "G", "lyrics": "日" },
+    { "pitch": 1, "chord": "C", "lyrics": "快" },
+    { "pitch": 1, "chord": "C", "lyrics": "乐" }
+  ]
+}
